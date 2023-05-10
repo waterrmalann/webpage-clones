@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spotify - Web Player: Music for everyone</title>
+	<!-- favicon -->
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="cookieAlert">
+		<p>We and our partners use cookies to personalize your experience, to show you ads based on your interests, and
+			for measurement and analytics purposes. By using our website and services, you agree to our use of cookies
+			as described in our Cookie Policy.</p>
+		<span id="closeCookieAlert">x</span>
+	</div>
+
+	<div class="bottombar">
+		<div>
+			<p class="bottombar__pretitle">
+				Preview of Spotify
+			</p>
+			<p class="bottombar__title">
+				Sign up to get unlimited songs and podcasts with occassional ads. No credit card required.
+			</p>
+		</div>
+		<div>
+			<button class="bottombar__button">Sign up free</button>
+		</div>
+	</div>
+	<main>
+
+		<aside class="side">
+			<h1 class="side__title"><i class="fa-brands fa-spotify"></i> Spotify</h1>
+			<nav class="nav">
+				<ul class="nav__links">
+					<li class="active"><i class="fa-solid fa-house"></i> &nbsp;&nbsp;Home</li>
+					<li><i class="fa-solid fa-magnifying-glass"></i> &nbsp;&nbsp;Search</li>
+					<li><i class="fa-solid fa-book"></i> &nbsp;&nbsp;Your Library</li>
+				</ul>
+				<ul class="nav__actions">
+					<li><i class="fa-solid fa-plus"></i> &nbsp;&nbsp;Create Playlist</li>
+					<li><i class="fa-solid fa-heart"></i> &nbsp;&nbsp;Liked Songs</li>
+				</ul>
+				<ul class="nav__extra-links">
+					<li><a href="#">Legal</a></li>
+					<li><a href="#">Privacy Center</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Cookies</a></li>
+					<li><a href="#">About Ads</a></li>
+				</ul>
+			</nav>
+			<span class="chip">
+				<i class="fa-solid fa-globe"></i> English
+			</span>
+		</aside>
+		<section class="main">
+			<div class="topbar">
+				<div class="topbar__arrows">
+					<span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
+					<span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+				</div>
+				<div class="topbar__main">
+					<ul class="topbar__links">
+						<li>Premium</li>
+						<li>Support</li>
+						<li>Download</li>
+					</ul>
+					<ul class="topbar__signup">
+						<li>Sign Up</li>
+						<li><button class="round-button">Log In</button></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="shelf">
+				<h2 class="shelf__heading">Focus</h2>
+				<div class="shelf__grid">
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/peaceful_piano.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Peaceful Piano</h3>
+						<p class="shelf__grid__item__desc">Relax and indulge with beautiful piano pieces.</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/deep_focus.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Deep Focus</h3>
+						<p class="shelf__grid__item__desc">Keep calm and focus with ambient and post...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/instrumental_study.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Instrumental Study</h3>
+						<p class="shelf__grid__item__desc">Focus with soft study music in the...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/focus_flow.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Focus Flow</h3>
+						<p class="shelf__grid__item__desc">Uptempo instrumental hip hop beats.</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/workday_lounge.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Workday Lounge</h3>
+						<p class="shelf__grid__item__desc">Lounge and chill out music for your workday.</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/beats_to_think_to.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Beats to think to</h3>
+						<p class="shelf__grid__item__desc">Focus with deep techno and techno house.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="shelf">
+				<h2 class="shelf__heading">Spotify Playlists</h2>
+				<div class="shelf__grid">
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/todays_top_hits.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Today's Top Hits</h3>
+						<p class="shelf__grid__item__desc">Rema and Selena Gomez are on top of the...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/rapcaviar.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">RapCaviar</h3>
+						<p class="shelf__grid__item__desc">New music from Ice Spice, Jack Harlow an...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/all_out_2010s.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">All Out 2010s</h3>
+						<p class="shelf__grid__item__desc">The biggest songs of the 2010s.</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/rock_classics.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Rock Classics</h3>
+						<p class="shelf__grid__item__desc">Rock legends &amp; epic songs that continue to...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/chill_hits.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Chill Hits</h3>
+						<p class="shelf__grid__item__desc">Kick back to the best new and recent chill...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/viva_latino.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Viva Latino</h3>
+						<p class="shelf__grid__item__desc">Today's top Latin hits, elevando neustra...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="shelf">
+				<h2 class="shelf__heading">Sound of India</h2>
+				<div class="shelf__grid">
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/the_sound_of_mumbai_in.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">The Sound of Mumbai</h3>
+						<p class="shelf__grid__item__desc">The songs that define, unite and distinguish...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/the_sound_of_kolkata_in.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">The Sound of Kolkata</h3>
+						<p class="shelf__grid__item__desc">The songs that define, unite and distinguish...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/the_sound_of_delhi_in.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">The Sound of Delhi</h3>
+						<p class="shelf__grid__item__desc">The songs that define, unite and distinguish...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/the_sound_of_bengaluru_in.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">The Sound of Bengaluru</h3>
+						<p class="shelf__grid__item__desc">The songs that define, unite and distinguish...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/the_sound_of_chennai_in.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">The Sound of Chennai</h3>
+						<p class="shelf__grid__item__desc">The songs that define, unite and distinguish...</p>
+					</div>
+
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/the_sound_of_hyderabad_in.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">The Sound of Hyderabad</h3>
+						<p class="shelf__grid__item__desc">The songs that define, unite and distinguish...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="footer__links">
+					<div class="footer__links__block">
+						<h3 class="footer__links__block__title">Company</h3>
+						<ul class="footer__links__list">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">For the Record</a></li>
+						</ul>
+					</div>
+					<div class="footer__links__block">
+						<h3 class="footer__links__block__title">Communities</h3>
+						<ul class="footer__links__list">
+							<li><a href="#">For artists</a></li>
+							<li><a href="#">Developers</a></li>
+							<li><a href="#">Advertising</a></li>
+							<li><a href="#">Investors</a></li>
+							<li><a href="#">Vendors</a></li>
+							<li><a href="#">Spotify for Work</a></li>
+						</ul>
+					</div>
+					<div class="footer__links__block">
+						<h3 class="footer__links__block__title">Useful links</h3>
+						<ul class="footer__links__list">
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Free Mobile App</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__icons">
+					<ul class="footer__icons__list">
+						<li class="footer__icon"><i class="fa-brands fa-instagram"></i></li>
+						<li class="footer__icon"><i class="fa-brands fa-twitter"></i></li>
+						<li class="footer__icon"><i class="fa-brands fa-facebook"></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="post-footer">
+				<hr class="post-footer__line">
+				<p class="post-footer__attrib">&copy; 2023 Spotify AB</p>
+			</div>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
